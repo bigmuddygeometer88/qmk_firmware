@@ -6,6 +6,10 @@
 #define _LAYER2 2
 #define _LAYER3 3
 
+void keyboard_post_init_user(void) {
+    pimoroni_trackball_set_rgb(0,254,254);
+}
+
 enum custom_keycodes {
     LAYER0 = SAFE_RANGE,
     LAYER1,
